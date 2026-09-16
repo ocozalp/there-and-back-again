@@ -1,0 +1,51 @@
+[project]
+name = "dl"
+version = "0.1.0"
+description = "A documentation-first journey through deep learning, told as Bilbo's illustrated travel diary."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.7",
+    "torchvision>=0.22",
+    "numpy>=2",
+    "matplotlib>=3.9",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+# Production libraries used only by each phase's experiments/pNN_*/library.py and comparison tests.
+# Never imported from src/dl.
+library = [
+    "transformers",
+    "diffusers",
+    "peft",
+    "tiktoken",
+    "timm",
+    "open_clip_torch",
+    "safetensors",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "experiments", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

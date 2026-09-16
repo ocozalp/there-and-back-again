@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Data and checkpoints (regenerable or downloadable)
+checkpoints/*
+!checkpoints/.gitkeep
+data/
+*.pt
+*.pth
+*.safetensors
+
+# OS
+.DS_Store
