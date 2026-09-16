@@ -1,0 +1,31 @@
+{
+  "device": "mps",
+  "model": "MLP 3072 -> 256 -> n_classes, ReLU",
+  "parameters_location": 788487,
+  "train/val/test": [
+    6000,
+    1000,
+    1000
+  ],
+  "batch_size": 64,
+  "epochs": 15,
+  "optimizer": "Adam lr 1e-3 (hand-written)",
+  "location_test_acc": 1.0,
+  "location_final_val_acc": 1.0,
+  "seconds_per_epoch": 0.17,
+  "test_acc_per_attribute": {
+    "location": 1.0,
+    "weather": 0.942,
+    "time": 1.0,
+    "companion": 0.713,
+    "item": 0.678
+  },
+  "chance_per_attribute": {
+    "location": 0.143,
+    "weather": 0.25,
+    "time": 0.25,
+    "companion": 0.2,
+    "item": 0.2
+  },
+  "commit": "d8becef"
+}

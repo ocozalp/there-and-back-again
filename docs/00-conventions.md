@@ -79,6 +79,10 @@ sentence each.
 - `experiments/pNN_*/` holds phase-specific scripts: `train_*.py`, `plot_*.py`, `library.py`, and a
   `results.md` that records config, parameter count, wall-clock time, final metrics, and the
   commit hash.
+- **Hand-write once, then use the library.** A component is written by hand in the chapter that
+  teaches it and compared with the library version there. Later chapters use the library version
+  (`nn.Linear` from Phase 3 on, `F.cross_entropy`, `torch.optim.Adam`) unless the component is that
+  chapter's own subject. The point is to understand each piece, not to maintain a parallel framework.
 - Tests in `tests/` cover shapes for each new layer, numerical checks against a reference where
   one exists (finite differences, PyTorch, a naive loop), and agreement between the renderer and
   the caption generator.

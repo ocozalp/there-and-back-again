@@ -1,0 +1,40 @@
+{
+  "device": "mps",
+  "model": "MLP 784 -> 256 -> 128 -> 10, ReLU",
+  "parameters": 235146,
+  "train/val/test": [
+    55000,
+    5000,
+    10000
+  ],
+  "batch_size": 128,
+  "epochs": 10,
+  "optimizer": "Adam lr 1e-3 (hand-written)",
+  "final_train_loss": 0.0148,
+  "final_val_acc": 0.9792,
+  "test_acc": 0.9818,
+  "test_mistakes": 182,
+  "train_time_seconds": 6.8,
+  "seconds_per_epoch": 0.65,
+  "optimizer_comparison_5_epochs": {
+    "SGD lr 0.1": {
+      "val_acc": 0.9584,
+      "val_loss": 0.1339
+    },
+    "SGD + momentum 0.9, lr 0.05": {
+      "val_acc": 0.9766,
+      "val_loss": 0.0842
+    },
+    "Adam lr 1e-3": {
+      "val_acc": 0.9746,
+      "val_loss": 0.0854
+    }
+  },
+  "overfit_500_images": {
+    "best_val_epoch": 18,
+    "final_train_loss": "5.41e-04",
+    "final_val_loss": 0.651,
+    "final_val_acc": 0.8736
+  },
+  "commit": "d8becef"
+}

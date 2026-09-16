@@ -36,8 +36,8 @@ throughout while the scenery changes from the Shire to the Lonely Mountain and h
 |---|---|---|---|---|
 | 0 | [Skeleton and scenario](docs/00-skeleton/README.md) | Tooling, conventions, the renderer and caption generator | `uv`, `pytest`, `ruff` | done |
 | 1 | [Autograd from scratch](docs/01-autograd/README.md) | Computational graphs, backprop, gradient checking | `torch.autograd` | done |
-| 2 | Tensors and PyTorch | Tensors, `nn.Module`, optimizers, the train loop | `torch.nn`, `torch.optim` | next |
-| 3 | Language modeling before attention | Tokens, embeddings, bigram and MLP language models | `nn.Embedding`, `tiktoken` | planned |
+| 2 | [Tensors and PyTorch](docs/02-pytorch-mlp/README.md) | Tensors, `nn.Module`, optimizers, the train loop | `torch.nn`, `torch.optim` | done |
+| 3 | Language modeling before attention | Tokens, embeddings, bigram and MLP language models | `nn.Embedding`, `tiktoken` | next |
 | 4 | Attention and a small GPT | Self-attention, the transformer block, sampling | `transformers` GPT-2 | planned |
 | 5 | Vision models and latent spaces | CNNs, ViTs, autoencoders, VAEs | `torchvision`, `timm`, `AutoencoderKL` | planned |
 | 6 | Connecting vision and language | Contrastive learning, cross-attention, captioning | `CLIPModel`, BLIP | planned |

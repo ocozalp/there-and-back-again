@@ -11,7 +11,7 @@ build/
 # Data and checkpoints (regenerable or downloadable)
 checkpoints/*
 !checkpoints/.gitkeep
-data/
+/data/
 *.pt
 *.pth
 *.safetensors

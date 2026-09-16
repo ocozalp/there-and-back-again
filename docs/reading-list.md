@@ -12,6 +12,13 @@ on why it matters. Chapters link here on first mention.
 - [Goodfellow, Bengio, Courville, Deep Learning](https://www.deeplearningbook.org/): the reference text; chapter 6 covers feedforward networks and backprop.
 - [Prince, Understanding Deep Learning](https://udlbook.github.io/udlbook/): a newer, more visual reference text with free PDF.
 - [CS231n notes](https://cs231n.github.io/): practical optimization, initialization, and CNN notes; the [backprop notes](https://cs231n.github.io/optimization-2/) are the best short treatment.
+- [PyTorch, Tensors tutorial](https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html) and [Broadcasting semantics](https://pytorch.org/docs/stable/notes/broadcasting.html): shapes, dtypes, devices, and the broadcasting rule, Phase 2.
+- [PyTorch, Build the Neural Network](https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html) and [Optimizing Model Parameters](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html): the library versions of Phase 2's Module, loss, and train loop.
+- [Ruder, An overview of gradient descent optimization algorithms](https://www.ruder.io/optimizing-gradient-descent/): momentum, Adam, and friends in one place.
+- [Kingma and Ba 2014, Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980): the Adam paper, with the bias-correction derivation.
+- [LeCun et al. 1998, Gradient-Based Learning Applied to Document Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf): the paper that introduced MNIST and convolutional networks.
+- [Yann LeCun's MNIST page](http://yann.lecun.com/exdb/mnist/): the dataset and a table of historical error rates.
+- [PyTorch Lightning documentation](https://lightning.ai/docs/pytorch/stable/): what a training framework automates on top of the loop written in Phase 2.
 
 ## Language models (Phases 3 and 4)
 

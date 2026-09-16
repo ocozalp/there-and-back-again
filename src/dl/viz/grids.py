@@ -30,7 +30,7 @@ def image_grid(
         ax.axis("off")
     for i, img in enumerate(images):
         ax = axes[i]
-        ax.imshow(img, interpolation="nearest")
+        ax.imshow(img, interpolation="nearest", cmap="gray" if img.ndim == 2 else None)
         if captions is not None:
             ax.set_title("\n".join(textwrap.wrap(captions[i], wrap)), fontsize=6, pad=3)
     if title:
