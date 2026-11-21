@@ -6,7 +6,9 @@ diary. Every model is tiny (under about 5M parameters), trains in minutes on a l
 to make one chapter of the documentation concrete and testable.
 
 **The documentation is the product.** The code is here so the chapters can show real numbers,
-real figures, and real failures. Start reading at [docs/00-conventions.md](docs/00-conventions.md).
+real figures, and real failures. Start reading at [docs/00-conventions.md](docs/00-conventions.md),
+or read every chapter as one book in
+[docs/there-and-back-again.pdf](docs/there-and-back-again.pdf).
 
 ## The scenario
 
@@ -66,7 +68,12 @@ uv sync --group dev --extra library   # add the production libraries for library
 uv run pytest
 uv run ruff check
 uv run python experiments/p00_skeleton/check_device.py
+uv run --group docs python docs/book/build_pdf.py   # rebuild docs/there-and-back-again.pdf
 ```
+
+The PDF build uses pandoc from the `docs` group, plus [tectonic](https://tectonic-typesetting.github.io/)
+and the [Mermaid CLI](https://github.com/mermaid-js/mermaid-cli) on `PATH`
+(`brew install tectonic`, `npm i -g @mermaid-js/mermaid-cli`).
 
 Budgets that every phase respects: under 5M parameters, under 15 minutes of training on the
 Metal backend, downloaded datasets under 200 MB.

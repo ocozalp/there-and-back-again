@@ -103,3 +103,12 @@ A chapter explains any exception before the budget is raised.
 
 One tag per completed phase (`phase-00`, `phase-01`, ...) so any chapter can be read against the
 exact code that produced its numbers. Commit messages mention the phase.
+
+## The book
+
+[there-and-back-again.pdf](there-and-back-again.pdf) compiles the introduction, these conventions,
+every chapter, the glossary and the reading list into one PDF. It is rebuilt and committed at the
+end of every phase with `uv run --group docs python docs/book/build_pdf.py`. The script picks up any
+`docs/NN-name/README.md` on its own, renders Mermaid blocks as vector figures, turns links between
+chapters into links inside the PDF, and points code links at GitHub. Chapters need nothing special
+to appear in it; keep writing plain GitHub markdown with `$...$` math.

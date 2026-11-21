@@ -1,0 +1,12 @@
+title: "There and Back Again"
+subtitle: "Deep learning, one chapter at a time"
+documentclass: book
+classoption:
+  - oneside
+fontsize: 11pt
+geometry:
+  - margin=2.5cm
+colorlinks: true
+linkcolor: "blue!50!black"
+urlcolor: "blue!60!black"
+toccolor: "black"

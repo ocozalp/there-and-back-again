@@ -30,6 +30,9 @@ dev = [
     "pytest>=8",
     "ruff>=0.6",
 ]
+docs = [
+    "pypandoc-binary>=1.17",
+]
 
 [build-system]
 requires = ["hatchling"]
